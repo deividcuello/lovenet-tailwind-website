@@ -6,7 +6,9 @@ module.exports = {
       darkRed: '#1b0000',
       red: '#ff0000',
       white: '#ffffff',
-      gray: '#cccccc'
+      gray: '#cccccc',
+      yellow: '#FFFF00',
+      blue: '#0000ff'
     },
     extend: {
       fontFamily: {

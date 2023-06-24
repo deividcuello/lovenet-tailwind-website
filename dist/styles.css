@@ -1,0 +1,33 @@
+.animation1{
+    animation: animation1 .5s linear infinite alternate;
+}
+.animation2{
+    animation: animation2 .5s linear infinite alternate;
+}
+.animation3{
+    animation: animation3 .5s linear infinite alternate;
+}
+
+@keyframes animation1 {
+    0%   {background-color: #ff0000;}
+    100% {background-color:#ffffff;}
+}
+
+@keyframes animation2 {
+    0%   {background-color: #ffff00;}
+    100% {background-color:#ffffff;}
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .animation1{
+        animation: none !important;
+    }
+    .animation2{
+        animation: none !important;
+    }
+    .animation3{
+        animation: none !important;
+    }
+  }
