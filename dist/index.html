@@ -14,6 +14,8 @@
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     <script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
 	<script nomodule src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine-ie11.min.js" defer></script>
     
@@ -46,6 +48,12 @@
             <div class="text-white order-last md:order-none">
                 <p class="text-4xl leading-loose font-semibold mb-5">I’ll be <span class="text-red">loving you</span>, always with a love that’s true</p>
                 <p class="italic"> Love is a set of emotions and behaviors characterized by intimacy, passion, and commitment.</p>
+                <button class="bg-red text-white py-1 rounded-full px-3 mb-16 mt-5 flex gap-2 items-center hover:scale-110 transition-transform">
+                    Get your crush
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right border border-white rounded-full p-1" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                      </svg>
+                </button>
             </div>
             <div>
                 <img src="./assets/love_hero.svg">
@@ -66,7 +74,6 @@
         <div class="container mx-auto">
             <h2 class="font-semibold text-2xl relative inline-block after:contents-[''] after:absolute after:w-1/2 after:h-1 after:bg-red after:bottom-0 after:left-0">Get Your Crush</h2>
             <p class="mt-4 italic mb-4">Why to use our app?</p>
-            <button class="bg-darkRed text-white py-1 rounded-full px-3 mb-16">Get your crush</button>
             <div class="flex flex-col gap-10">
                 <div class="flex flex-col md:flex-row justify-between items-center gap-5 relative">
                     <div data-aos="fade-right" class="max-w-2xl">
@@ -102,19 +109,125 @@
             </div>
         </div>
     </section>
-    <section id="contact">
-        <div class="container mx-auto text-center mt-16">
-            <form class="flex flex-col items-center bg-gray w-1/2 mx-auto p-3 gap-2">
-                <h2 class="text-2xl font-semibold">Get In Touch</h2>
-                <div class="flex-1 w-full">
-                    <div class="flex flex-col items-center flex-1 gap-2">
-                        <input type="text" placeholder="Your name" class="w-full p-2 focus:outline-none">
-                        <input type="email" placeholder="Your email" class="w-full p-2 focus:outline-none">
-                        <textarea placeholder="Your message" class="w-full resize-none h-52 p-2 focus:outline-none"></textarea>
-                        <input type="submit" value="Send message" class="w-full bg-red font-semibold p-2 cursor-pointer">
+    <section id="blog" class="mt-16 px-2">
+        <div class="container mx-auto swiper mySwiper">
+            
+            <h2 class="font-semibold text-2xl relative inline-block after:contents-[''] after:absolute after:w-1/2 after:h-1 after:bg-red after:bottom-0 after:left-0">Blog</h2>
+            <p class="mt-4 italic mb-4">Stay on top of our news</p>
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <div class="max-w-[80%] mx-auto shadow-md">
+                        <div class="w-full h-44">
+                            <img src="./assets/blog1.jpg" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <div>
+                                <h3 class="font-semibold">From girlfriend to wife, that's true love</h3>
+                                <p>A wedding is a ceremonial event that celebrates the union of two individuals in marriage. It is a joyous occasion where family and friends come together to witness and celebrate the love and commitment between the couple ...<br><span class="text-blue underline text-sm">Read more</span></p>
+                            </div>
+                            <div class="relative h-20">
+                                <div class="flex items-center gap-2 absolute bottom-0 left-0">
+                                    <img src="./assets/blogprofile1.jpg" class="w-12 h-12 rounded-full">
+                                    <div >
+                                        <p class="font-semibold text-sm">John Spammer</p>
+                                        <p class="text-sm">Austarlia</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </form>
+                
+                <div class="swiper-slide">
+                    <div class="max-w-[80%] mx-auto shadow-md">
+                        <div class="w-full h-44">
+                            <img src="./assets/blog2.jpg" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <div>
+                                <h3 class="font-semibold">Tips to start a relationship in 2023</h3>
+                                <p>The best way to start a relationship is to approach it with genuine intentions, open communication, and a willingness to invest time and effort. Here are some key steps to consider: Self-Reflection: Take time to understand yourself, your values ...<br><span class="text-blue underline text-sm">Read more</span></p>
+                            </div>
+                            <div class="relative h-20">
+                                <div class="flex items-center gap-2 absolute bottom-0 left-0">
+                                    <img src="./assets/blogprofile2.jpg" class="w-12 h-12 rounded-full">
+                                    <div >
+                                        <p class="font-semibold text-sm">Jennifer Garcia</p>
+                                        <p class="text-sm">United States</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="max-w-[80%] mx-auto shadow-md">
+                        <div class="w-full h-44">
+                            <img src="./assets/blog3.jpg" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <div>
+                                <h3 class="font-semibold">Do animals fall in love like humans?</h3>
+                                <p>While animals don't experience emotions in the same way humans do, many species exhibit behaviors that could be interpreted as forms of bonding or attachment. Some animals, particularly mammals, form strong social bonds with ...<br><span class="text-blue underline text-sm">Read more</span></p>
+                            </div>
+                            <div class="relative h-20">
+                                <div class="flex items-center gap-2 absolute bottom-0 left-0">
+                                    <img src="./assets/blogprofile3.jpg" class="w-12 h-12 rounded-full">
+                                    <div >
+                                        <p class="font-semibold text-sm">Nicole Montana</p>
+                                        <p class="text-sm">Spain</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="max-w-[80%] mx-auto shadow-md">
+                        <div class="w-full h-44">
+                            <img src="./assets/blog4.jpg" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-5">
+                            <div>
+                                <h3 class="font-semibold">How to get over a person? we tell you</h3>
+                                <p>Getting over a person can be a challenging and emotionally difficult process. Here are some steps that may help you in the healing and moving-on process: Accept Your Feelings: Allow yourself to acknowledge and experience ...<br><span class="text-blue underline text-sm">Read more</span></p>
+                            </div>
+                            <div class="relative h-20">
+                                <div class="flex items-center gap-2 absolute bottom-0 left-0">
+                                    <img src="./assets/blogprofile4.jpg" class="w-12 h-12 rounded-full">
+                                    <div >
+                                        <p class="font-semibold text-sm">Nicole Montana</p>
+                                        <p class="text-sm">India</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        
+    </section>
+
+    <section id="feedbacks" class="mt-16 px-2">
+        <div class="container mx-auto">
+            <h2 class="font-semibold text-2xl relative inline-block after:contents-[''] after:absolute after:w-1/2 after:h-1 after:bg-red after:bottom-0 after:left-0">What do our users think?</h2>
+            <p class="mt-4 italic mb-4">We care about you</p>
+            <div class="shadow-xl p-4 w-full md:max-w-[70%] mx-auto">
+                <div class="text-center">
+                    <div class="mx-auto relative bg-red">
+                        <img src="./assets/feedback1.jpg" class="w-24 h-24 object-cover rounded-full mx-auto absolute -top-24 left-1/2 -translate-x-1/2">
+                    </div>
+                    <h3 class="font-semibold text-lg mb-5 mt-10">@daniela29</h3>
+                    <p>Lovenet is an exceptional website that fosters a warm and welcoming environment for individuals seeking meaningful connections.</p><br>
+                    <p>Lovenet provides an extensive profile creation process, allowing users to showcase their personalities and interests in detail. This thoughtful approach enhances the chances of finding compatible matches who share similar values and goals.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -150,8 +263,26 @@
     </footer>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <script>
     	AOS.init();
+    </script>
+
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
     </script>
     
 </body>
